@@ -8,23 +8,26 @@
     <title>Contato</title>
 </head>
 <body>
-  <form id="nome">
+  <form id="nome" action="" method="GET">
     <fieldset>
         <legend>Contato</legend>
-        Nome
+        <label for="usuario">Nome</label>
         <br>
-        <input type="text">
+        <input id="usuario" type="text">
         <br>
-
-        Email
         <br>
-        <input type="email">
+        <label for="email">Email</label>
         <br>
-        Mensagem
+        <input id="email" pattern="" type="email">
         <br>
-        <input type="textarea" max="20" min="2">
         <br>
-        <button>Enviar</button>
+        <label for="mensagem">Mensagem</label>
+        <br>
+        <textarea id="mensagem" cols="30" rows="10">
+        </textarea>
+        <br>
+        <br>
+        <button form="nome" type="submit">Enviar</button>
     </fieldset>
 
   </form>
